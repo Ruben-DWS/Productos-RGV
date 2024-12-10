@@ -1,0 +1,151 @@
+
+  .main-content {
+    margin-left: 200px;
+    padding: 20px;
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+  }
+  .header {
+    background-color: #3c1a2b;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+  }
+  .header img {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  .header nav {
+    display: inline-block;
+  }
+  .header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+  }
+  .header nav a:hover {
+    text-decoration: underline;
+  }
+  
+
+ .container{
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ } 
+
+
+
+
+
+.form-container {
+  display: flex;
+  justify-content: space-between; /* Espacio entre formularios */
+  gap: 20px; /* Espacio entre los formularios */
+  font-family: Arial, sans-serif;
+   /* Permite que los formularios se ajusten cuando no haya suficiente espacio */
+}
+
+.formulario {
+  width: 48%; /* Cada formulario ocupa el 48% del espacio disponible */
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.categoriaformulario {
+  width: 48%; /* Cada formulario ocupa el 48% del espacio disponible */
+  height: 10%;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.categoriaformulario label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.categoriaformulario input, .categoriaformulario select{
+  width: 30%;
+  height: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario input, .formulario select {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.categoriaformulario button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.categoriaformulario button[type="submit"]:hover {
+  background-color: #3c1a2b;
+  font-family: Arial, sans-serif;
+}
+
+.formulario button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+.formulario button[type="submit"]:hover {
+  background-color: #3c1a2b;
+}
+
+/* Estilo para los campos en línea */
+.campo-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.campo-group label {
+  margin-right: 10px;
+}
+
+.campo-group input, .campo-group select {
+  width: 48%;  
+}

@@ -1,0 +1,54 @@
+
+mat-card{
+
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 24PX;
+    background-color: white;
+}
+
+
+.custom-card {
+    border-radius: 15px; /* Borde redondeado */
+    overflow: hidden; /* Asegúrate de que la imagen no sobresalga */
+    width: 300px; /* Ancho de la tarjeta */
+    margin: 20px; /* Margen alrededor de la tarjeta */
+  }
+  
+.custom-image {
+    width: 50%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+
+mat-card:hover {
+    transform: translateY(-10px); /* Levanta la tarjeta */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.header {
+    background-color: #3c1a2b;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 24PX;
+  }
+  .header img {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  .header nav {
+    display: inline-block;
+  }
+  .header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+  }
+  .header nav a:hover {
+    text-decoration: underline;
+  }
+
+  

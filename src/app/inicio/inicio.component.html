@@ -1,0 +1,29 @@
+<div class="header">
+  <img alt="Toyland Shop Logo" height="50" src="https://storage.googleapis.com/a1aa/image/ChVtyXqk2lbeV69cF7J2fEfRdD5O8xFD8JOhJXGZ0ybhsqtnA.jpg" width="50"/>
+  <span>
+   BIENVENIDO A TOYLAND
+  </span>
+  <nav>
+  
+  </nav>
+</div>
+  <mat-grid-list cols="2">
+    <mat-grid-tile>
+        <mat-card class="custom-card" [routerLink]="['/añadir']">
+            <img mat-card-image src="añadirFoto.jpg" alt="Imagen de ejemplo">
+            <mat-card-content>
+              <p>Añadir Producto</p>
+              
+            </mat-card-content>
+        </mat-card>   
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="custom-card" [routerLink]="['/listado']">
+        <img mat-card-image src="tienda.jpg" alt="Imagen de ejemplo">
+        <mat-card-content>
+          <p>Ver Productos</p>
+        </mat-card-content>
+    </mat-card> 
+    </mat-grid-tile>
+  </mat-grid-list>
+  

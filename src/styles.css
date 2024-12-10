@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+body {
+    background-image: url('/toy.jpg'); /* Ruta desde la carpeta public */
+    background-size: cover; /* Escalar la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repeticiones */
+    margin: 0; /* Quitar márgenes del body */
+    height: 100vh; /* Altura total de la ventana */
+  }
+  

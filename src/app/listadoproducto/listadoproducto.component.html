@@ -1,0 +1,78 @@
+
+ <head>
+  <title>
+   TOYLAND SHOP
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  
+ </head>
+ <body>
+    <div class="header">
+        <img alt="Toyland Shop Logo" height="50" src="https://storage.googleapis.com/a1aa/image/ChVtyXqk2lbeV69cF7J2fEfRdD5O8xFD8JOhJXGZ0ybhsqtnA.jpg" width="50"/>
+        <span>
+         TOYLAND SHOP
+        </span>
+        <nav>
+         <a href="#">Inicio</a>
+         <a [routerLink]="['/añadir']">Añadir Producto</a>
+        
+        </nav>
+    </div>
+ 
+  <div class="main-content">
+  
+
+    <div class="sidebar">
+  <div class="menu-title">
+    Filtrado
+  </div>
+  @for (item of categorias; track $index) {
+    <div class="menu-item">
+        
+        <ul>
+            <section class="example-section">
+            <mat-checkbox
+                class="example-margin"
+                (change)="toggleCategoria($event, item.nombre)">
+                {{item.nombre}}
+            </mat-checkbox>
+            </section>
+        </ul>
+        
+    </div>
+}
+</div>
+
+   <div class="cards">
+
+        @if (productosFiltrados && productosFiltrados.length > 0) {
+
+            @for (product of productosFiltrados; track $index) {
+
+                <mat-card>
+                    <img src={{product.imagen}}>
+                    <div class="card-content">
+                        <mat-card-title>{{product.nombre}}</mat-card-title>
+                        <mat-card-subtitle>Categoria:{{product.categoria}}</mat-card-subtitle>
+                        
+                        <div class="card-price">Precio: {{product.precio}}€</div>
+                    </div>
+                </mat-card> 
+
+
+            }
+    }
+      
+            
+   </div>
+
+  </div>
+
+
+ 
+
+
+
+
+ </body>
+

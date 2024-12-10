@@ -1,0 +1,8 @@
+ div {
+    display: block;
+    height: 100vh; /* Asegúrate de que el contenedor ocupe toda la altura */
+    background-image: url("/public/toy.jpg");
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
